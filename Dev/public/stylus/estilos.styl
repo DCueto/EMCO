@@ -1,0 +1,226 @@
+@import "nib"
+@import "normalize.styl"
+@import "fonts.styl"
+
+vendor-prefixes = webkit o ms moz official
+
+gris_oscuro = #333333
+gris_claro = #818181
+rojo = #BD255B
+gris_mas_claro = #F0F0F0
+
+a
+	text-decoration none
+
+body
+	font-size 16px
+	font-family 'Varela Round', sans-serif
+	background-color #F5F5F5
+
+figure
+	margin 0
+
+img
+	vertical-align top
+
+ul
+	margin 0
+	padding 0
+
+
+/* Utilidades */
+
+
+.center-block
+	margin 0 auto
+
+.center-text
+	text-align center
+
+.left
+	float left
+
+.relative
+	position relative
+
+.right
+	float right
+
+.right-text
+	text-align right
+
+.round
+	border-radius 50%
+	overflow hidden
+
+.wrap
+	width 1225px
+
+.wrap-section
+	width 1225px
+
+
+/* Header */
+
+.center-header
+	position relative
+
+.header
+	height 100px
+	background-color #AD0B2A
+
+.logo
+	position absolute
+	top 1.2em
+
+.logo img
+	width 180px
+
+.button-menu
+	position absolute
+	right 15%
+	top 1.4em
+	font-size 24px
+	color white
+
+.user
+	position relative
+	top 2em
+
+.username
+	color white
+	position relative
+	top 9px
+	margin-left 0.5em
+	&:after
+		content ""
+		border-left 7px solid transparent
+		border-top 9px solid gris_claro
+		border-right 7px solid transparent
+		display inline-block
+		margin-left .4em
+
+/* Curses */
+/*
+.curse
+	background-color white
+	display block
+	float left
+	max-height 250px
+	padding-right 2em
+	margin-top 4em
+
+.curse-image
+	float left
+	vertical-align top
+	margin-right 2em
+	position relative
+
+	*/
+
+.curse-title
+	border-bottom 1px solid gris_mas_claro
+
+
+.curse-description
+	color gris_claro
+
+.curse-text
+	background-color white
+
+
+
+
+/* Responsive design */
+
+@media screen and (min-width:1025px)
+	.button-menu
+		display none
+
+	.curse
+		background-color white
+		display block
+		float left
+		max-height 250px
+		padding-right 2em
+		margin-top 4em
+
+	.curse-image
+		float left
+		margin-right 2em
+		position relative
+
+	.curse-title
+		right 9em
+		margin 2em
+		padding-bottom 2em
+
+@media screen and (max-width:1225px)
+	.wrap-section
+		width 1000px
+
+	.curse-image img
+		width 540px
+
+	.curse-title
+		margin 1em
+		padding-bottom 1em
+
+	.curse-description
+		font-size 15px
+
+
+@media screen and (max-width:1024px)
+	.user
+		display none
+
+	.wrap-section
+		width 800px
+
+	.curse
+		background-color white
+		width 450px
+		margin 0 auto
+
+	.curse-image
+		position relative
+		margin-top 4em
+
+	.curse-image img
+		width 450px
+
+	.curse-text
+		width 450px
+
+	.curse-title
+		margin-top em
+
+	.curse-description
+		padding 1em
+
+@media screen and (max-width:800px)
+	
+	.wrap-section
+		width 500px
+
+@media screen and (max-width:480px)
+
+	.curse
+		margin 0
+
+	.curse-image img
+		width 480px
+
+	.curse-text
+		width 480px
+
+	.curse-description
+		display none
+
+@media screen and (max-width:400px)
+
+	.curse-image img
+		width 400px
+
+	.curse-description
+		padding-right 4em
