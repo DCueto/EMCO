@@ -1,0 +1,218 @@
+@import "estilos.styl"
+@import "fonts.styl"
+
+azul = #009BDB
+
+a
+	margin 0
+	color black
+
+html
+body
+	overflow hidden
+
+.center
+	text-align center
+
+.modules
+	padding 3em
+	width 53%
+	display inline-block
+	overflow-y scroll
+	height 770px
+	margin-right 500px
+
+	.space
+		height 100px
+
+.module
+	text-align center
+
+	.module-title
+		padding-bottom 1em
+		border-bottom 1px solid gris_claro
+
+.class-image img
+.class-image
+	width 210px
+	height 138px
+
+.class
+	background-color white
+	border 2px solid gris_mas_claro
+	width 210px
+	display inline-block
+	margin 1.5em
+
+	.class-title
+		text-align center
+		padding-top 1em
+		padding-bottom 1em
+		color gris_oscuro
+		margin 0
+
+.wrap
+	width 350px
+
+.topbar
+	background-color #AEADB3
+	overflow hidden
+
+	.topbar-title
+		padding 0
+		margin 1em
+		position relative
+		font-size 16px
+		border 0
+		text-align left
+
+	.icon-left
+		margin 0 1em 0 0
+		position absolute
+		right 2em
+		top 4.2em
+
+.community
+	right 0
+	position absolute
+	display block
+	overflow scroll
+	background-color white
+	height 880px
+	width 480px
+	box-shadow 0px 10px 20px gris_claro
+	.form
+		text-align center
+		margin-bottom 2em
+
+		.input-post
+			position relative
+			margin-top 2em
+			box-shadow inset 0px 0px 5px #AEADB3
+			border 1px solid #dddddd
+			background-color gris_mas_claro
+			padding .5em
+
+		.select-module
+			display block
+			//position absolute
+			float left
+			margin-top 1em
+			margin-left 3em
+			background-color #E4462D
+			color white
+			font-size 13px
+			margin-right 14em
+
+		.form-button
+			display block
+			//position absolute
+			margin-top 1em
+			right 3em
+			border 0
+			background-color #E4462D
+			font-size 13px
+			color white
+			padding 0.7em 1.5em
+
+	.posts
+		overflow scroll
+		//height 400px
+		font-size 14px
+
+		.post
+			background-color white
+			position relative
+			border-bottom 1px solid gris_claro
+			padding-bottom 1em
+
+			.top-post
+			.top-post a
+				color gris_claro
+
+				.user-post
+					display inline-block
+					position relative
+					left 2em
+					top 1em
+				.time-post
+					display inline-block
+					position absolute
+					right 2em
+					top 1em
+					margin 0
+
+			.body-post 
+				padding 1em 2em
+				padding-bottom 0
+
+			.actions-post
+				margin-top 2em
+				.left-icons
+					display inline-block
+					margin-left 2em
+					.plus-icon
+					.likes
+					.minus-icon
+						display inline-block
+
+					.likes
+						margin 0
+
+				.right-icons
+					display inline-block
+					right 0
+					bottom 1em
+					right 2em
+					position absolute
+
+					.responder
+						margin-right 0.6em
+						color azul
+
+					.comentarios
+						color gris_claro
+
+.styled-select select
+			border-radius 0
+			padding 0.9em 1.5em
+			line-height 1
+			border 0
+			appearance none
+
+textarea::-webkit-input-placeholder
+	color gris_claro
+
+.filters
+	background-color #C64832
+	line-height 3.5em
+	font-size 13px
+
+	.first-filters li
+		display inline-block
+
+	.first-filters a
+		padding 1em
+		background-color #A01127
+		color white
+
+	.second-filters
+		white-space nowrap
+		overflow-x auto
+
+	.second-filters li
+		display inline-block
+
+	.second-filters a
+		padding 1em
+		background-color #A01127
+		color white
+
+	
+@media screen and (max-width:1024px)
+	
+	.community
+		display none
+
+	.modules
+		width 90%

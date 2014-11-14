@@ -53,9 +53,6 @@ ul
 	border-radius 50%
 	overflow hidden
 
-.wrap
-	width 1225px
-
 .wrap-section
 	width 1225px
 
@@ -66,26 +63,29 @@ ul
 	position relative
 
 .header
-	height 100px
+	height 50px
 	background-color #AD0B2A
 
 .logo
 	position absolute
-	top 1.2em
+	top 0.6em
+	margin-left 5em
 
 .logo img
-	width 180px
+	width 100px
 
 .button-menu
 	position absolute
-	right 15%
-	top 1.4em
+	right 0
+	top .6em
 	font-size 24px
 	color white
 
 .user
-	position relative
-	top 2em
+	position absolute
+	right 0
+	top 0.5em
+	margin-right 5em
 
 .username
 	color white
@@ -101,26 +101,19 @@ ul
 		margin-left .4em
 
 /* Curses */
-/*
+
+.curses-title
+	margin-top 1em
+	color gris_claro
+
 .curse
-	background-color white
-	display block
-	float left
-	max-height 250px
-	padding-right 2em
-	margin-top 4em
-
-.curse-image
-	float left
-	vertical-align top
-	margin-right 2em
-	position relative
-
-	*/
+	border 2px solid gris_mas_claro
+	border-top 6px solid #C6C6C5
+	margin-top 1em
 
 .curse-title
 	border-bottom 1px solid gris_mas_claro
-
+	color black
 
 .curse-description
 	color gris_claro
@@ -143,7 +136,6 @@ ul
 		float left
 		max-height 250px
 		padding-right 2em
-		margin-top 4em
 
 	.curse-image
 		float left
@@ -158,6 +150,12 @@ ul
 @media screen and (max-width:1225px)
 	.wrap-section
 		width 1000px
+
+	.user
+		margin-right 3em
+
+	.logo
+		margin-left 3em
 
 	.curse-image img
 		width 540px
@@ -177,14 +175,17 @@ ul
 	.wrap-section
 		width 800px
 
+	.curses-title
+		text-align center 
+
 	.curse
 		background-color white
 		width 450px
 		margin 0 auto
+		margin-top 3em
 
 	.curse-image
 		position relative
-		margin-top 4em
 
 	.curse-image img
 		width 450px
@@ -198,6 +199,10 @@ ul
 	.curse-description
 		padding 1em
 
+	.button-menu
+		display block
+		margin-right 2em
+
 @media screen and (max-width:800px)
 	
 	.wrap-section
@@ -207,12 +212,16 @@ ul
 
 	.curse
 		margin 0
+		margin-top 2em
 
 	.curse-image img
 		width 480px
 
 	.curse-text
-		width 480px
+		width auto
+
+	.curse-title
+		border-bottom 0
 
 	.curse-description
 		display none
@@ -224,3 +233,5 @@ ul
 
 	.curse-description
 		padding-right 4em
+
+
